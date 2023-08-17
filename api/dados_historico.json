@@ -1,0 +1,139 @@
+{
+  "registros": [
+    {
+      "id": 1,
+      "data_e_hora": "2023-08-04T10:00:00",
+      "operador": {
+        "id": "op1",
+        "nome": "Operador 1"
+      },
+      "cliente": {
+        "id": "cli1",
+        "nome": "Cliente 1",
+        "telefone": "11999999999",
+        "email": "cliente1@email.com"
+      },
+      "tipo_de_contato": ["email", "whatsapp"],
+      "historico": [
+        {
+          "idOperador": "op1",
+          "idCliente": "cli1",
+          "data_e_hora": "2023-08-04T09:30:00",
+          "mensagem_enviada": "Bom dia, como posso ajudar?",
+          "mensagem_recebida": "Bom dia, estou com uma dúvida."
+        },
+        {
+          "idOperador": "op1",
+          "idCliente": "cli1",
+          "data_e_hora": "2023-08-04T09:32:00",
+          "mensagem_enviada": "Claro, qual é a sua dúvida?",
+          "mensagem_recebida": "Estou com problemas no pagamento."
+        },
+        {
+          "idOperador": "op1",
+          "idCliente": "cli1",
+          "data_e_hora": "2023-08-04T09:35:00",
+          "mensagem_enviada": "Vou verificar isso para você agora.",
+          "mensagem_recebida": "Obrigado!"
+        },
+        {
+          "idOperador": "op1",
+          "idCliente": "cli1",
+          "data_e_hora": "2023-08-04T09:40:00",
+          "mensagem_enviada": "O problema foi resolvido.",
+          "mensagem_recebida": "Ótimo, obrigado!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "data_e_hora": "2023-08-04T10:30:00",
+      "operador": {
+        "id": "op2",
+        "nome": "Operador 2"
+      },
+      "cliente": {
+        "id": "cli2",
+        "nome": "Cliente 2",
+        "telefone": "11999999998",
+        "email": "cliente2@email.com"
+      },
+      "tipo_de_contato": ["chat"],
+      "historico": [
+        {
+          "idOperador": "op2",
+          "idCliente": "cli2",
+          "data_e_hora": "2023-08-04T10:00:00",
+          "mensagem_enviada": "Bom dia, em que posso ajudar?",
+          "mensagem_recebida": "Olá, preciso de assistência com minha conta."
+        },
+        {
+          "idOperador": "op2",
+          "idCliente": "cli2",
+          "data_e_hora": "2023-08-04T10:05:00",
+          "mensagem_enviada": "Claro, o que está acontecendo com sua conta?",
+          "mensagem_recebida": "Não consigo acessá-la."
+        },
+        {
+          "idOperador": "op2",
+          "idCliente": "cli2",
+          "data_e_hora": "2023-08-04T10:10:00",
+          "mensagem_enviada": "Vou verificar isso para você.",
+          "mensagem_recebida": "Obrigado!"
+        },
+        {
+          "idOperador": "op2",
+          "idCliente": "cli2",
+          "data_e_hora": "2023-08-04T10:15:00",
+          "mensagem_enviada": "Agora você deve conseguir acessar sua conta.",
+          "mensagem_recebida": "Sim, agora está funcionando. Obrigado!"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "data_e_hora": "2023-08-04T14:00:00",
+      "operador": {
+        "id": "op10",
+        "nome": "Operador 3"
+      },
+      "cliente": {
+        "id": "cli3",
+        "nome": "Cliente 3",
+        "telefone": "11999999910",
+        "email": "cliente10@email.com"
+      },
+      "tipo_de_contato": ["chat"],
+      "historico": [
+        {
+          "idOperador": "op3",
+          "idCliente": "cli3",
+          "data_e_hora": "2023-08-04T13:50:00",
+          "mensagem_enviada": "Olá, como posso auxiliar?",
+          "mensagem_recebida": "Oi, estou com problema no pagamento."
+        },
+        {
+          "idOperador": "op3",
+          "idCliente": "cli3",
+          "data_e_hora": "2023-08-04T13:52:00",
+          "mensagem_enviada": "Vamos resolver isso para você. Pode detalhar o problema?",
+          "mensagem_recebida": "Não consigo finalizar o pagamento."
+        },
+        {
+          "idOperador": "op3",
+          "idCliente": "cli3",
+          "data_e_hora": "2023-08-04T13:55:00",
+          "mensagem_enviada": "Estou verificando isso agora.",
+          "mensagem_recebida": "Agradeço a ajuda."
+        },
+        {
+          "idOperador": "op3",
+          "idCliente": "cli3",
+          "data_e_hora": "2023-08-04T14:00:00",
+          "mensagem_enviada": "Resolvemos o problema. Tente novamente.",
+          "mensagem_recebida": "Funcionou! Muito obrigado."
+        }
+      ]
+    }
+  ]
+}
