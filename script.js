@@ -1,7 +1,7 @@
 var fecharBotao = document.getElementById("fecharPagina");
 
 fecharBotao.addEventListener("click", function() {
-  // Fecha a janela atual
+  
   window.close();
 });
 
