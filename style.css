@@ -1,5 +1,342 @@
 /* rest css*/
+/* Estilo Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+   
+    background: #fafff8;
+   
+}
+
+.sections {
+    display: flex;
+  }
+  
+  .section {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #da0146 10%, rgb(219, 53, 53) 65%);
+    width: 100%;
+    height: 100%;
+    padding: 30px 30px;
+
+    
+}
+
+.logo {
+    color: white;
+    margin-left: 65px;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#fecharPagina {
+    color: white;
+    margin-right: 45px;
+    cursor: pointer;
+}
+
+.tresUltimas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.exibir3{
+    display: block;
+    
+}
+h6{
+    color: red;
+    margin-left: -80px;
+}
+
+h2{
+padding: 5px 2px;
+}
+
+.chat{
+    color: red;
+}
+
+.operadores{
+margin-left: 220px;
+}
+
+img ~ #op1-icon{
+height: 65px;
+}
+
+#op2-icon{
+    height: 1100px;
+}
+
+.more{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+
+}
+
+#mostrar-mais{
+    margin-top: 200px;
+    margin-left: 350px;
+}
+/* Seção Esquerda */
+#lado1 {
+    display: flex;
+   
+    width: 100%;
+    height: auto;
+    border: 2px solid #cec7c7;
+    padding: 20px;
+    margin-top: 3px;
+}
+
+.tresUltimas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.exibir3 {
+    display: block;
+    text-align: center;
+}
+
+.exibir3 h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.operadores {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#op1-icon,
+#op2-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#atendimentos {
+    margin-top: 20px;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    margin-top: -35px;
+}
+
+#mostrar-mais {
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#mostrar-mais:focus {
+    outline: none;
+}
+
+.div-atendimento {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  #atendimentos{
+    margin-top: 50px;
+  }
+/* Seção Direita */
+
+#lado2 {
+    display: flex;
+  
+    width: 100%;
+    height: auto;
+    border: 2px solid #cec7c7;
+    padding: 20px;
+    margin-top: 3px;
+}
+
+.seisUltimas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.exibir6 {
+    display: block;
+    text-align: center;
+}
+
+.exibir6 {
+    display: block;
+    color: red;
+    font-size: 16px;
+    margin-bottom: -25px;
+    margin-left: -50px;
+}
+h5{
+    margin-left: -130px;
+}
+
+h3{
+    color: red;
+}
+#operator-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#operator-icons img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#table-body {
+    display: block;
+    margin-top: 20px;
+}
+
+#loading-message,
+#no-records-message {
+    margin-top: 20px;
+    padding: 8px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.exibir {
+    display: flex;
+    align-items: center;
+}
+
+#date-range {
+    padding: 6px 15px;
+    font-size: 16px;
+    background: red;
+    color: white;
+}
+
+.data {
+    width: 100%;
+}
+
+/* Media Query para Telas Médias (Tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sections{
+        display: block;
+    }
+
+    #lado1,
+    #lado2 {
+        width: 100%;
+    }
+
+    #op1-icon,
+    #op2-icon,
+    #operator-icons img {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+    }
+
+    .exibir3 h2,
+    .exibir6 h3 {
+        font-size: 16px;
+    }
+
+    #mostrar-mais {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    #date-range {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Media Query para Telas Grandes (Desktops) */
+@media (min-width: 1025px) {
+    #op1-icon,
+    #op2-icon,
+    #operator-icons img {
+        width: 80px;
+        height: 80px;
+        margin: 0 20px;
+    }
+
+    .exibir3 h2,
+    .exibir6 h3 {
+        font-size: 15px;
+    }
+
+    #table-body {
+        flex: 1; /* Expande para preencher espaço restante */
+        overflow: auto; /* Adiciona barra de rolagem se necessário */
+        border: 1px solid #ccc;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+
+    #mostrar-mais {
+        padding: 15px 25px;
+        font-size: 18px;
+    }
+
+    #date-range {
+        padding: 6px 15px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+/*
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +352,7 @@
 }
 
 /*header principal*/
+/*
 .principal{
     display: flex;
     align-items: center;
@@ -47,7 +385,7 @@ h4{
 }
 
 /*seção esquerda*/
-
+/*
 #lado1{
   display: flex;
   float: left;
@@ -117,18 +455,17 @@ margin-top: 490px;
 }
 
 #mostrar-mais{
-    border: none; /* Remove as bordas do botão */
-    background-color: red; /* Define a cor de fundo como vermelho */
-    color: white; /* Define a cor da fonte como branca */
+    border: none; 
+    background-color: red; 
+    color: white; 
     padding: 15px 15px;
-    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    cursor: pointer; 
 }
-
 #mostrar-mais:focus {
-    outline: none; /* Remove a borda de foco ao clicar no botão */
+    outline: none; 
   }
 /* seção direita*/
-
+/*
 #lado2{
   display: flex;
   float: right;
@@ -219,4 +556,7 @@ footer{
     color: white;
     padding: 6px 6px;
 }
+
+
+
 

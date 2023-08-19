@@ -9,45 +9,47 @@
 <body>
     <div class="container">
         <header class="principal"><h1 class="logo">Direct Call</h1> <h4>SIGNALLINK INFORMATICA LTDA - 02.677.129/0001-64</h4> <h4 id="fecharPagina">X</h4></header>
-        <section id="lado1">
-            <article>
-                <header class="tresUltimas">
-                    <div class="exibir3">
-                    <h6>HISTÓRICO DE</h6>
-                    <h2 class="chat">Chat e Whatsapp</h2>
-                    </div>
-                    <div class="operadores">
-                        <img  id="op1-icon" alt="Operador 1" onclick="mostrarAtendimentos('op1')" src="/img/directletrabranca (1).jpeg" alt="imagem operador1">
-                        <img  id="op2-icon" alt="Operador 2" onclick="mostrarAtendimentos('op2')" src="/img/user.png" alt="imagem operador2">
-                    </div>
-
-                </header>
-                <div id="atendimentos"></div>
-                <footer class="more"><button id="mostrar-mais" onclick="mostrarMaisAtendimentos()">Mostrar Mais</button></footer>
-            </article>
-        </section>
-
-        <section id="lado2">
-            <article>
-                <header class="seisUltimas">
-                    <div class="exibir6">
-                        <H6>HISTÓRICO DE</H6>
-                        <h3>Chamadas e Chamadas Gravadas</h3>
-                    </div>
-
-                    <div id="operator-icons">
-                        <img id="operador1" src="/img/directletrabranca (1).jpeg" alt="imagem operador" data-operator="Operador 1">
-                        <img id="operador2" src="/img/user.png" alt="imagem operador" data-operator="Operador 2">
-                        <img id="operador3" src="/img/directletrabranca (1).jpeg" alt="imagem operador" data-operator="Operador 3">
-                    </div>
-
-                </header>
-                <div id="table-body"></div>
-                <div id="loading-message" style="display: none;">Procurando...</div>
-                <div id="no-records-message" style="display: none;">Este operador não possui mais atendimentos para mostrar.</div>
-                <footer class="exibir"> <div id="date-range"></div> <input class="data" type="date"> </footer>
-            </article>
-        </section>
+        <div class="sections">
+            <section id="lado1">
+                <article>
+                    <header class="tresUltimas">
+                        <div class="exibir3">
+                        <h6>HISTÓRICO DE</h6>
+                        <h2 class="chat">Chat e Whatsapp</h2>
+                        </div>
+                        <div class="operadores">
+                            <img  id="op1-icon" alt="Operador 1" onclick="mostrarAtendimentos('op1')" src="/img/directletrabranca (1).jpeg" alt="imagem operador1">
+                            <img  id="op2-icon" alt="Operador 2" onclick="mostrarAtendimentos('op2')" src="/img/user.png" alt="imagem operador2">
+                        </div>
+    
+                    </header>
+                    <div id="atendimentos"></div>
+                    <footer class="more"><button id="mostrar-mais" onclick="mostrarMaisAtendimentos()">Mostrar Mais</button></footer>
+                </article>
+            </section>
+    
+            <section id="lado2">
+                <article>
+                    <header class="seisUltimas">
+                        <div class="exibir6">
+                            <h5>HISTÓRICO DE</h5>
+                            <h3>Chamadas e Chamadas Gravadas</h3>
+                        </div>
+    
+                        <div id="operator-icons">
+                            <img id="operador1" src="/img/directletrabranca (1).jpeg" alt="imagem operador" data-operator="Operador 1">
+                            <img id="operador2" src="/img/user.png" alt="imagem operador" data-operator="Operador 2">
+                            <img id="operador3" src="/img/directletrabranca (1).jpeg" alt="imagem operador" data-operator="Operador 3">
+                        </div>
+    
+                    </header>
+                    <div id="table-body"></div>
+                    <div id="loading-message" style="display: none;">Procurando...</div>
+                    <div id="no-records-message" style="display: none;">Este operador não possui mais atendimentos para mostrar.</div>
+                    <footer class="exibir"> <div id="date-range"></div> <input class="data" type="date"> </footer>
+                </article>
+            </section>
+        </div>
 
     </div>
     <script src="/script.js"></script>
