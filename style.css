@@ -66,7 +66,7 @@ h4{
 }
 
 .exibir3{
-    display: flex;
+    display:block;
     align-items: center;
     justify-content: space-between;
     padding: 2px;
@@ -75,37 +75,58 @@ h4{
     color: red;
     
 }
-
+h6{
+    display: block;
+    color: red;
+}
 .operadores{
  display: flex;
 }
 
-#imgOp1{
+#op1-icon{
   margin-right: 60px;
   cursor: pointer;
 
 }
 
-#imgOp2{
+#op2-icon{
 margin-left: -6px;
 height: 90px;
 margin-top: 7px;
 cursor: pointer;
 }
 
+.div-atendimento {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  #atendimentos{
+    margin-top: 50px;
+  }
 .buttom{
 margin-top: 490px;
  margin-left: 600px;
 }
 
-#mostrarMais{
-    width: 70px;
-    height: 60px;
-    background: red;
-    border-radius: 10px;
-    padding: 10px;
-    cursor: pointer;
+.more{
+    display: flex;
+    margin-left: 570px;
+    margin-top: 110px;
 }
+
+#mostrar-mais{
+    border: none; /* Remove as bordas do botão */
+    background-color: red; /* Define a cor de fundo como vermelho */
+    color: white; /* Define a cor da fonte como branca */
+    padding: 15px 15px;
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
+
+#mostrar-mais:focus {
+    outline: none; /* Remove a borda de foco ao clicar no botão */
+  }
 /* seção direita*/
 
 #lado2{
@@ -123,27 +144,77 @@ margin-top: 490px;
     
     display: flex;
     align-items: center;
+    align-items: center;
     
 }
 
 .exibir6{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
+   
+    
     padding: 2px;
     width: 100%;
     height: 50px;
     color: red;
 }
 
+h6{
+    padding: 6px;
+}
+
+h3{
+    padding: 6px;
+    font-size: 1rem;
+}
+#operator-icons{
+display: flex;
+align-items: center;
+margin-left: 100px;
+padding: 20px;
+}
+
+#operador1{
+cursor: pointer;
+}
+
+#operador2{
+    height: 87px;
+cursor: pointer;
+
+}
+
+#operador3{
+cursor: pointer;
+    
+}
+#table-body{
+    display: block;
+    margin-top: 30px;
+   
+}
+
+#loading-message{
+    margin-top: 45px;
+    padding: 8px;
+}
+
+#no-records-message{
+    margin-top: 45px;
+    padding: 8px;
+}
+
 footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 580px;
+    margin-top: 680px;
 }
 
-.display{
+.exibir{
+   margin-top: 100px;
+}
+
+#date-range{
     background: red;
     color: white;
     padding: 6px 6px;

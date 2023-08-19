@@ -8,31 +8,44 @@
 </head>
 <body>
     <div class="container">
-        <header class="principal"><h1 class="logo">Direct Call</h1> <h4>Dados da empresa</h4> <h4 id="fecharPagina">X</h4></header>
+        <header class="principal"><h1 class="logo">Direct Call</h1> <h4>SIGNALLINK INFORMATICA LTDA - 02.677.129/0001-64</h4> <h4 id="fecharPagina">X</h4></header>
         <section id="lado1">
             <article>
                 <header class="tresUltimas">
-                    <h1 class="exibir3">Exibir 3 Ultimas msgs</h1>
+                    <div class="exibir3">
+                    <h6>HISTÓRICO DE</h6>
+                    <h2 class="chat">Chat e Whatsapp</h2>
+                    </div>
                     <div class="operadores">
-                        <img  id="imgOp1" src="/img/directletrabranca (1).jpeg" alt="imagem operador1">
-                        <img  id="imgOp2"  src="/img/user.png" alt="imagem operador2">
+                        <img  id="op1-icon" alt="Operador 1" onclick="mostrarAtendimentos('op1')" src="/img/directletrabranca (1).jpeg" alt="imagem operador1">
+                        <img  id="op2-icon" alt="Operador 2" onclick="mostrarAtendimentos('op2')" src="/img/user.png" alt="imagem operador2">
                     </div>
 
                 </header>
-                <div id="registros"></div>
-                <footer class="buttom"><img src="/img/carregar mais.png" id="mostrarMais" alt="mostrar mais " title="Mostrar mais"></footer>
+                <div id="atendimentos"></div>
+                <footer class="more"><button id="mostrar-mais" onclick="mostrarMaisAtendimentos()">Mostrar Mais</button></footer>
             </article>
         </section>
 
         <section id="lado2">
             <article>
-                <header class="seisUltimas"><h1 class="exibir6">6 ultimas ligações</h1>
-                <img id="operador3" src="" alt="imagem operador">
-                <img id="operador4" src="" alt="imagem operador">
-                <img id="operador5" src="" alt="imagem operador">
+                <header class="seisUltimas">
+                    <div class="exibir6">
+                        <H6>HISTÓRICO DE</H6>
+                        <h3>Chamadas e Chamadas Gravadas</h3>
+                    </div>
+
+                    <div id="operator-icons">
+                        <img id="operador1" src="/img/directletrabranca (1).jpeg" alt="imagem operador" data-operator="Operador 1">
+                        <img id="operador2" src="/img/user.png" alt="imagem operador" data-operator="Operador 2">
+                        <img id="operador3" src="/img/directletrabranca (1).jpeg" alt="imagem operador" data-operator="Operador 3">
+                    </div>
 
                 </header>
-                <footer> <div class="display">de: 01/06/23 à 21/08/23</div> <input class="data" type="date"> </footer>
+                <div id="table-body"></div>
+                <div id="loading-message" style="display: none;">Procurando...</div>
+                <div id="no-records-message" style="display: none;">Este operador não possui mais atendimentos para mostrar.</div>
+                <footer class="exibir"> <div id="date-range"></div> <input class="data" type="date"> </footer>
             </article>
         </section>
 
