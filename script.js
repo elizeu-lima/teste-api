@@ -124,6 +124,64 @@ const displayedStartDate = document.getElementById('date-range'); // Substitua p
 
 // ...
 
+
+
+
+const todayButton = document.getElementById('today-button');
+const last3DaysButton = document.getElementById('last-3-days-button');
+const last7DaysButton = document.getElementById('last-7-days-button');
+const last15DaysButton = document.getElementById('last-15-days-button');
+const customRangeButton = document.getElementById('custom-range-button');
+const startDateSelector = document.getElementById('custom-start-date');
+const endDateSelector = document.getElementById('custom-end-date');
+
+
+
+todayButton.addEventListener('click', () => {
+    todayButton.classList.add('active');
+    last3DaysButton.classList.remove('active');
+    last7DaysButton.classList.remove('active');
+    last15DaysButton.classList.remove('active');
+    customRangeButton.classList.remove('active');
+    updateTable();
+});
+
+last3DaysButton.addEventListener('click', () => {
+    todayButton.classList.remove('active');
+    last3DaysButton.classList.add('active');
+    last7DaysButton.classList.remove('active');
+    last15DaysButton.classList.remove('active');
+    customRangeButton.classList.remove('active');
+    updateTable();
+});
+
+last7DaysButton.addEventListener('click', () => {
+    todayButton.classList.remove('active');
+    last3DaysButton.classList.remove('active');
+    last7DaysButton.classList.add('active');
+    last15DaysButton.classList.remove('active');
+    customRangeButton.classList.remove('active');
+    updateTable();
+});
+
+last15DaysButton.addEventListener('click', () => {
+    todayButton.classList.remove('active');
+    last3DaysButton.classList.remove('active');
+    last7DaysButton.classList.remove('active');
+    last15DaysButton.classList.add('active');
+    customRangeButton.classList.remove('active');
+    updateTable();
+});
+
+customRangeButton.addEventListener('click', () => {
+    todayButton.classList.remove('active');
+    last3DaysButton.classList.remove('active');
+    last7DaysButton.classList.remove('active');
+    last15DaysButton.classList.remove('active');
+    customRangeButton.classList.add('active');
+    updateTable();
+});
+
 /*renderiza e faz as atualizações, na div criada no html */
 
 const updateTable = () => {

@@ -46,7 +46,15 @@
                     <div id="table-body"></div>
                     <div id="loading-message" style="display: none;">Procurando...</div>
                     <div id="no-records-message" style="display: none;">Este operador não possui mais atendimentos para mostrar.</div>
-                    <footer class="exibir"> <div id="date-range"></div> <input class="data" type="date"> </footer>
+                    <footer class="exibir"> <div id="date-range"></div><div id="date-range-selector">
+                        <button id="today-button">Hoje</button>
+                        <button id="last-3-days-button">Últimos 3 Dias</button>
+                        <button id="last-7-days-button">Últimos 7 Dias</button>
+                        <button id="last-15-days-button">Últimos 15 Dias</button>
+                        <input type="date" id="custom-start-date">
+                        <input type="date" id="custom-end-date">
+                        <button id="custom-range-button">Período Personalizado</button>
+                    </div></footer>
                 </article>
             </section>
         </div>
