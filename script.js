@@ -1,3 +1,5 @@
+/*Bonus fechar pagina */
+
 var fecharBotao = document.getElementById("fecharPagina");
 
 fecharBotao.addEventListener("click", function() {
@@ -5,9 +7,16 @@ fecharBotao.addEventListener("click", function() {
   window.close();
 });
 
+
+
+
 const atendimentosContainer = document.getElementById('atendimentos');
+
+
+/*Exibir 3 ultimos atendimentos */
+
 const mostrarMaisButton = document.getElementById('mostrar-mais');
-let atendimentosExibidos = 3;
+let atendimentosExibidos = 3; //quando o ela é criada no html ela é chamada.
 const atendimentosPorVez = 3;
 
 function criarDivAtendimento(atendimento) {
@@ -31,6 +40,8 @@ function criarDivAtendimento(atendimento) {
   return divAtendimento;
 }
 
+/*carregas os ultimos atendimentos no carregamento da pagina */
+
 function renderizarAtendimentos(atendimentos) {
   atendimentosContainer.innerHTML = '';
 
@@ -43,8 +54,10 @@ function renderizarAtendimentos(atendimentos) {
   });
 }
 
+/*faz o filtro buscando atendimento do operador selecionado no icone */
+
 function mostrarAtendimentos(operadorId) {
-  const url = '/api/dados_historico.json'; // Substitua pela URL da sua API
+  const url = '/api/dados_historico.json'; 
   fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -54,7 +67,7 @@ function mostrarAtendimentos(operadorId) {
         return {
           ...registro,
           operador: { id: ultimaMensagem.idOperador },
-          cliente: registro.cliente.telefone,
+          cliente: { telefone: registro.cliente.telefone },
           mensagem_enviada: ultimaMensagem.mensagem_enviada,
           mensagem_recebida: ultimaMensagem.mensagem_recebida
         };
@@ -69,6 +82,8 @@ function mostrarAtendimentos(operadorId) {
     })
     .catch(error => console.error('Erro ao buscar dados da API:', error));
 }
+
+/*mostra mais atendimentos além dos tres primeiros de incio */
 
 function mostrarMaisAtendimentos() {
   atendimentosExibidos += atendimentosPorVez;
@@ -96,23 +111,28 @@ const initialRecordsCount = 6;
 let filteredOperator = null;
 let allRecords = null;
 
+/*filtra atendimentos conforme o operador selecionado */
+
 operatorIcons.forEach(icon => {
-    icon.addEventListener('click', () => {
-        filteredOperator = icon.getAttribute('data-operator');
-        updateTable();
-    });
+  icon.addEventListener('click', () => {
+      filteredOperator = icon.getAttribute('data-operator');
+      updateTable();
+  });
 });
 
 const displayedStartDate = document.getElementById('date-range'); // Substitua pelo ID real do elemento de exibição de data
 
 // ...
 
+/*renderiza e faz as atualizações, na div criada no html */
 
 const updateTable = () => {
     tableBody.innerHTML = '';
     loadingMessage.style.display = 'block';
     noRecordsMessage.style.display = 'none';
 
+    /*depois do operador escolhido antes tem uma busca simulanda por 2 sgundos. */
+    
     setTimeout(() => {
         const recordsToDisplay = filteredOperator
             ? allRecords.filter(record => record.nomeOperador === filteredOperator)
@@ -140,7 +160,7 @@ const updateTable = () => {
     }, 2000);
 };
 
-fetch('/Api/dados_chamadas_gravadas.json') // Substitua pela URL real da API
+fetch('/Api/dados_chamadas_gravadas.json') 
     .then(response => response.json())
     .then(data => {
         allRecords = data.registros.slice().reverse();
@@ -156,6 +176,7 @@ fetch('/Api/dados_chamadas_gravadas.json') // Substitua pela URL real da API
 
   
 // Função para formatar datas no formato desejado
+
 const formatDate = () => {
     const options = { year: '2-digit', month: '2-digit', day: '2-digit' };
     return new Date().toLocaleDateString('pt-BR', options);
@@ -182,5 +203,5 @@ observer.observe(tableBody, { childList: true });
 // Chame a função inicialmente para exibir o intervalo de datas atual
 updateDateRange();
 
-/*display */
+
 

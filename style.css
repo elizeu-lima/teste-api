@@ -66,7 +66,7 @@ h4 {
 }
 h6{
     color: red;
-    margin-left: -80px;
+    margin-left: -47px;
 }
 
 h2{
@@ -134,10 +134,15 @@ justify-content: flex-end;
     margin-top: 10px;
 }
 
-#op1-icon,
-#op2-icon {
+#op1-icon{
     width: 50px;
     height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+#op2-icon {
+    width: 50px;
+    height: 20px;
     margin: 0 10px;
     cursor: pointer;
 }
@@ -149,7 +154,7 @@ justify-content: flex-end;
 .more {
     display: flex;
     justify-content: center;
-    margin-top: -35px;
+    margin-top: -85px;
 }
 
 #mostrar-mais {
@@ -206,11 +211,13 @@ justify-content: flex-end;
     margin-left: -50px;
 }
 h5{
-    margin-left: -130px;
+    margin-left: -90px;
 }
 
 h3{
     color: red;
+    margin-left: 50px;
+
 }
 #operator-icons {
     display: flex;
@@ -256,7 +263,7 @@ footer {
 }
 
 .data {
-    width: 100%;
+    width: 20%;
 }
 
 /* Media Query para Telas Médias (Tablets) */
@@ -336,226 +343,6 @@ footer {
 
 
 
-/*
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-.container{
-    
-    width: 99vw;
-    height: 100vh;
-    background: #fafff8;
-}
-
-/*header principal*/
-/*
-.principal{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(to right, #da0146 10%, rgb(219, 53, 53) 65%);
-    margin-top: 9px;
-    padding: 2px;
-    width: 100%;
-    height: 100px;
-}
-
-.logo{
-    color: white;
-}
-
-h1{
-    margin-left: 65px;
-}
-
-h4{
-    font-size: 20px;
-    font-family: sans-serif;
-
-}
-
-#fecharPagina{
-    color: white;
-    margin-right: 45px;
-    cursor: pointer;
-}
-
-/*seção esquerda*/
-/*
-#lado1{
-  display: flex;
-  float: left;
-  width: 49%;
-  height: 90%;
-  border: 2px solid #cec7c7;
-  padding: 20px;
-  margin-left: 5px;
-  margin-top: 3px;
-}
-
-.tresUltimas{
-    display: flex;
-    align-items: center;
-    
-}
-
-.exibir3{
-    display:block;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2px;
-    width: 100%;
-    height: 50px;
-    color: red;
-    
-}
-h6{
-    display: block;
-    color: red;
-}
-.operadores{
- display: flex;
-}
-
-#op1-icon{
-  margin-right: 60px;
-  cursor: pointer;
-
-}
-
-#op2-icon{
-margin-left: -6px;
-height: 90px;
-margin-top: 7px;
-cursor: pointer;
-}
-
-.div-atendimento {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px 0;
-  }
-
-  #atendimentos{
-    margin-top: 50px;
-  }
-.buttom{
-margin-top: 490px;
- margin-left: 600px;
-}
-
-.more{
-    display: flex;
-    margin-left: 570px;
-    margin-top: 110px;
-}
-
-#mostrar-mais{
-    border: none; 
-    background-color: red; 
-    color: white; 
-    padding: 15px 15px;
-    cursor: pointer; 
-}
-#mostrar-mais:focus {
-    outline: none; 
-  }
-/* seção direita*/
-/*
-#lado2{
-  display: flex;
-  float: right;
-  width: 48%;
-  height: 90%;
-  border: 2px solid #cec7c7;
-  padding: 20px;
-  margin-right: 15px;
-  margin-top: 3px;
-}
-
-.seisUltimas{
-    
-    display: flex;
-    align-items: center;
-    align-items: center;
-    
-}
-
-.exibir6{
-    display: block;
-   
-    
-    padding: 2px;
-    width: 100%;
-    height: 50px;
-    color: red;
-}
-
-h6{
-    padding: 6px;
-}
-
-h3{
-    padding: 6px;
-    font-size: 1rem;
-}
-#operator-icons{
-display: flex;
-align-items: center;
-margin-left: 100px;
-padding: 20px;
-}
-
-#operador1{
-cursor: pointer;
-}
-
-#operador2{
-    height: 87px;
-cursor: pointer;
-
-}
-
-#operador3{
-cursor: pointer;
-    
-}
-#table-body{
-    display: block;
-    margin-top: 30px;
-   
-}
-
-#loading-message{
-    margin-top: 45px;
-    padding: 8px;
-}
-
-#no-records-message{
-    margin-top: 45px;
-    padding: 8px;
-}
-
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 680px;
-}
-
-.exibir{
-   margin-top: 100px;
-}
-
-#date-range{
-    background: red;
-    color: white;
-    padding: 6px 6px;
-}
 
 
 
