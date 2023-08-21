@@ -120,9 +120,7 @@ operatorIcons.forEach(icon => {
   });
 });
 
-const displayedStartDate = document.getElementById('date-range'); // Substitua pelo ID real do elemento de exibição de data
-
-// ...
+const displayedStartDate = document.getElementById('date-range'); 
 
 
 
@@ -215,6 +213,14 @@ const updateTable = () => {
         if (filteredOperator && recordsToDisplay.length === 0) {
             noRecordsMessage.style.display = 'block';
         }
+
+           // Cálculo das datas inicial e final
+           const initialDate = recordsToDisplay.length > 0 ? recordsToDisplay[0].data_inicio.substr(0, 10) : '';
+           const finalDate = recordsToDisplay.length > 0 ? recordsToDisplay[recordsToDisplay.length - 1].data_inicio.substr(0, 10) : '';
+   
+           // Atualização do elemento no rodapé
+           const dateRangeDisplay = document.getElementById('dateRangeDisplay');
+           dateRangeDisplay.textContent = `${initialDate} à ${finalDate}`;
     }, 2000);
 };
 
